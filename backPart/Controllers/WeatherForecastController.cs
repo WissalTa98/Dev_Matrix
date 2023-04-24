@@ -1,7 +1,11 @@
+using backPart.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Data;
 
 namespace backPart.Controllers
 {
+	//[Authorize(Roles = UserRoles.Developer)]
 	[ApiController]
 	[Route("[controller]")]
 	public class WeatherForecastController : ControllerBase
